@@ -16,8 +16,6 @@ void main() {
       expect(calc.state.result.toString(), "3.0");
     });
 
-    
-
     calc.add(OnChangeFirstNumberEvent("100"));
     calc.add(OnChangeOperatorEvent("-"));
     calc.add(OnChangeSecondNumberEvent("50"));
