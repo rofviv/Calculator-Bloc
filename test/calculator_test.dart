@@ -4,9 +4,9 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   CalculatorBloc calc = CalculatorBloc();
   group("Arimetica básica >", () {
-    tearDown(() {
-      calc.add(OnClearEvent());
-    });
+    // tearDown(() {
+    //   calc.add(OnClearEvent());
+    // });
 
     calc.add(OnChangeFirstNumberEvent("1"));
     calc.add(OnChangeOperatorEvent("+"));
